@@ -1,7 +1,7 @@
 import numpy as np
 
 ordering = []
-with open("data/input_for_day23.txt", "r") as f:
+with open("2020/data/small_input_for_day23.txt", "r") as f:
     text = f.read()
 for line in text:
     ordering.append(int(line))
@@ -52,7 +52,7 @@ print(ordering)
 
 
 
-##############################################33
+############################################## PUZZLE 2
 miljoen = 1000000
 tienmiljoen = 10000000
 new_input = np.arange(1,miljoen+1)

@@ -5,3 +5,8 @@
 4: "a"
 5: "b"
 
+ababbb
+bababa
+abbbab
+aaabbb
+aaaabbb

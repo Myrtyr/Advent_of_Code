@@ -138,7 +138,7 @@ def whatever(output_of_recursive):
 
 # def fun(abc):
 #     l = ['0']
-#     res = ['']
+#     start = ['']
 #     it = 0
 #     while l: #[[aa, aa]] of [[aaaa],[aaa]]
 #         char = rule_dict[l.pop(-1)]
@@ -150,13 +150,13 @@ def whatever(output_of_recursive):
 #             l.append(char[1][0])
 #             l.append(char[0][1])
 #             l.append(char[0][0])
-#             res.append([res[-1]])
+#             start.append([start[-1]])
 #             it += 1
 #         elif len(char) == 1 and len(char[0]) == 1 and char[0][0] != "a"  and char[0][0] != "b":
 #             l.append(char[0][0])
 #         else:
 #             pass
-#     return res
+#     return start
 
 
 

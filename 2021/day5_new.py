@@ -35,7 +35,6 @@ for line in data:
             for x_index in range(end_x, start_x+1):
                 locs[y_index, x_index] += 1
                 y_index += increase
-    print(locs)
 
 answer = np.where(locs >= 2)
 print(len(answer[0]))

@@ -1,1 +1,1 @@
-from day5_new import *
+from day6 import *

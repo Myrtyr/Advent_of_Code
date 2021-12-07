@@ -1,7 +1,7 @@
 with open("2021/data/input_day7.txt", "r") as f:
-    numbers_as_string = f.readline()[:-1]
+    numbers_as_string = f.readline()
 numbers = [int(number) for number in numbers_as_string.split(",")]
-
+print(len(numbers))
 # Puzzle 1
 median = sorted(numbers)[int(len(numbers)/2)]
 distances = 0
@@ -17,7 +17,6 @@ for index in range(len(numbers)):
     if new_diff < check:
         correct_index = index
         check = new_diff
-print(correct_index, check)
 avg = numbers[correct_index]
 # turns out the number rounded down was in the list, so above can be replaced by avg = int(avg)
 # but hey, this works every time

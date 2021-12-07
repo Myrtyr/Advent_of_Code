@@ -10,16 +10,7 @@ for elt in numbers:
 print(distances)
 
 # Puzzle 2
-avg = sum(numbers)/len(numbers)
-check = 500
-for index in range(len(numbers)):
-    new_diff = abs(numbers[index] - avg)
-    if new_diff < check:
-        correct_index = index
-        check = new_diff
-avg = numbers[correct_index]
-# turns out the number rounded down was in the list, so above can be replaced by avg = int(avg)
-# but hey, this works every time
+avg = int(sum(numbers)/len(numbers))
 
 distances = 0
 for elt in numbers:

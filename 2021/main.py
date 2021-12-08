@@ -64,3 +64,4 @@ for display in displays:
         decoded_digit += correct_digit
     result += int(decoded_digit)
 print(result)
+print("")

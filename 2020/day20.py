@@ -18,21 +18,21 @@ for elt in images:
     amount_of_images += 1
     image_dict[elt[0]] = [image_border_north, image_border_north[::-1], image_border_east, image_border_east[::-1], image_border_south, image_border_south[::-1], image_border_west, image_border_west[::-1]]
 # guessing the image is square, so 12*12
-amount_of_neighbors = dict.fromkeys(image_dict.keys(), 0)
+number_of_neighbors = dict.fromkeys(image_dict.keys(), 0)
 neighbors_of_image = dict.fromkeys(image_dict.keys(), {})
 for image_name in image_dict:
     for other_image in image_dict:
         for border_index in range(len(image_dict[image_name])):
             image_border = image_dict[image_name][border_index]
             if image_border in image_dict[other_image] and image_name != other_image:
-                amount_of_neighbors[image_name] += 1
+                number_of_neighbors[image_name] += 1
                 print(image_name, other_image, border_index)
                 neighbors_of_image[image_name][other_image] = border_index
 start = 1
 corners = []
 sides = []
 middles = []
-for key, value in amount_of_neighbors.items():
+for key, value in number_of_neighbors.items():
     if value == 4:
         corners.append(key)
         start *= int(key[5:-1])
